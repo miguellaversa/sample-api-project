@@ -1,0 +1,29 @@
+version: '3.8'
+
+name: api-container
+
+services:
+  postgres:
+    image: postgres
+    container_name: api-postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: dw
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  prgx:
+    container_name: api-prgx
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./api:/app/api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
