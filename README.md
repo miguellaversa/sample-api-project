@@ -6,6 +6,7 @@ The main components of the API are the controllers, which handle the requests fr
 
 
 <br>
+
 ## Prerequisites
 
 Before you get started, you will need to install the Docker and Docker Compose dependencies:
@@ -14,6 +15,7 @@ Before you get started, you will need to install the Docker and Docker Compose d
 
 
 <br>
+
 ## Getting Started
 
 Once you have installed the dependencies, you can follow these steps to get the API up and running:
@@ -31,6 +33,7 @@ You can interact with the API using tools like [Postman](https://www.postman.com
 
 
 <br>
+
 ## Usage
 
 The API works with JWT authentication, in order to start using the API you need to send a request to create the access token, this token will available for 120 minutes. 
@@ -91,6 +94,7 @@ For more detailed information, refer to the [API documentation.](http://localhos
 
 
 <br>
+
 ## Directory Hierarchy
 
 ```
@@ -122,6 +126,7 @@ For more detailed information, refer to the [API documentation.](http://localhos
 ```
 
 <br>
+
 ## Sources
 
 - FastAPI documentation: https://fastapi.tiangolo.com/
