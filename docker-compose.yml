@@ -16,8 +16,8 @@ services:
       - ./data/postgres:/var/lib/postgresql/data
       - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
 
-  prgx:
-    container_name: api-prgx
+  sample:
+    container_name: api-sample
     build:
       context: .
       dockerfile: Dockerfile

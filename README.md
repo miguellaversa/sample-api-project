@@ -1,4 +1,4 @@
-# PRGX API
+# SAMPLE API
 
 This API provides endpoints for getting, creating, updating, and deleting users and addresses. It is built with Python and FastAPI, uses PostgreSQL as a database, and it is containerized with Docker.
 
@@ -44,7 +44,7 @@ The following is an example of this request:
 POST http://localhost:8000/login
 
 {
-    "username": "prgx",
+    "username": "sample",
 	"password": "prgx1234"
 }
 ```

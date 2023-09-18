@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS address (
 -- Sample data
 INSERT INTO api_users (username, password)
 VALUES
-  ('prgx', '$2b$12$hOXbfEUiL3jjIvz/qIbBNOKy86HGP1BNvNZMsbGugMw.SZ4/6kcRq');
+  ('sample', '$2b$12$hOXbfEUiL3jjIvz/qIbBNOKy86HGP1BNvNZMsbGugMw.SZ4/6kcRq');
 
 
 INSERT INTO users (id, first_name, last_name, email, password)

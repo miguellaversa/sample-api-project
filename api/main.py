@@ -8,7 +8,7 @@ from routes import routes, auth
 
 
 app = FastAPI(
-            title = "PRGX API", 
+            title = "SAMPLE API", 
             description = "", 
             version = "1.0"
         )
